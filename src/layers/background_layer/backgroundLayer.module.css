@@ -1,0 +1,18 @@
+.backgroundImage {
+    position: fixed;
+    background-image: url("../../images/background_stars.png");
+    top: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: min(100%, 1440px);
+    height: 100%;
+    
+    background-size: 100% 100%;
+}
+
+.backgroundLayer {
+    width: min(100%, 1440px);
+    margin: auto;
+}
