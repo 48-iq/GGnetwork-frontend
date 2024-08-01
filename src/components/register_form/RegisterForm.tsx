@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import BaseButton from "../base_button/BaseButton";
 import BaseInput from "../base_input/BaseInput"
 import cl from './registerForm.module.css'
@@ -13,11 +14,9 @@ const RegisterForm: React.FC = () => {
             <BaseInput placeholder="Никнейм"/>
             <BaseInput placeholder="Пароль"/>
             <BaseInput placeholder="Повторите пароль"/>
-            <ul>
-                <li>
-                    <BaseButton>Войти</BaseButton>
-                    <BaseButton>Зарегистрироваться</BaseButton>
-                </li>
+            <ul> 
+                <li className={cl.li1}><BaseButton>Зарегистрироваться</BaseButton></li>
+                <li className={cl.li2}><Link to={"/"}><BaseButton>Ко входу</BaseButton></Link></li>
             </ul>
         </form>
     )

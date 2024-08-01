@@ -2,13 +2,17 @@ import React from "react";
 import cl from './baseButton.module.css';
 
 interface IBaseButtonProps {
-    onClick?: () => void;
+    onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
     children?: React.ReactNode;
 }
 
 const BaseButton: React.FC<IBaseButtonProps> = ({onClick, children}) => {
+    
     return (
+        <>
         <button onClick={onClick} className={cl.baseButton}>{children}</button>
+        </>
+        
     );
 }
 
