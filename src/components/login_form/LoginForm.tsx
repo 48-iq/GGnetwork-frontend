@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
 import BaseButton from "../base_button/BaseButton";
 import BaseInput from "../base_input/BaseInput";
 import cl from './loginForm.module.css'
+import LinkButton from "../link_button/LinkButton";
 
 const LoginForm: React.FC = () => {
     return (
@@ -10,7 +10,7 @@ const LoginForm: React.FC = () => {
             <BaseInput placeholder="Пароль"/>
             <ul>
                 <li><BaseButton>Войти</BaseButton></li>
-                <li><Link to={"/register"}><BaseButton>К регистрации</BaseButton></Link></li>
+                <li><LinkButton to={"/register"}>К регистрации</LinkButton></li>
             </ul>
         </form>
     );
