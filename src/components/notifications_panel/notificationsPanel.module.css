@@ -1,0 +1,12 @@
+.notificationsPanel {
+    width: 250px;
+    height: 400px;
+    overflow-y: scroll;
+    background: none;
+    border: solid 4px #62B28D;
+    border-radius: 8px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}

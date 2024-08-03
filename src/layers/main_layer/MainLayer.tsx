@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import Header from "../../components/header/Header";
 import cl from './mainLayer.module.css'
 import Nav from "../../components/nav/Nav";
+import NotificationsPanel from "../../components/notifications_panel/NotificationsPanel";
 
 const MainLayer: React.FC = () => {
 
@@ -11,9 +12,10 @@ const MainLayer: React.FC = () => {
             <Header/>
             <main className={cl.main}>
                 <Nav/>
-                <div>
+                <div className={cl.content}>
                     <Outlet/>
                 </div>
+                <NotificationsPanel/>
             </main>
             
         </div>

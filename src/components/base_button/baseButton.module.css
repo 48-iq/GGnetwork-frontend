@@ -1,9 +1,9 @@
 .baseButton {
     border: none;
     border-radius: 8px;
-    height: 46px;
+    height: 32px;
     background-color: #d9d9d9;
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     width: 100%;
 }

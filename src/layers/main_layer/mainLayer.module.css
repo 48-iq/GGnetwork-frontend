@@ -13,3 +13,9 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+.content {
+    width: 611px;
+    background-color: none;
+}
+
